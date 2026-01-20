@@ -235,4 +235,204 @@ body {
   letter-spacing: 1px;
   color: #ffffff;
 }
+ .card-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
 
+.card-container h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+
+.Card-Container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.Card-Container h2 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+  color: #ffffff;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+ 
+.cards div {
+ 
+  padding: 30px;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards  div:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(255, 0, 255, 0.25);
+}
+
+.cardbig {
+  grid-row: span 2;
+}
+
+.cardmedium {
+  grid-column: span 2;
+}
+.cardsmall {
+  grid-column: span 1;
+}
+
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+
+.cards h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.cards p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #dcdcdc;
+}   
+ /* ===============================
+   Featured Section
+================================ */
+.featured {
+  padding: 60px 8%;
+  background-color: #0f172a;
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* ===============================
+   Episodes Container (INLINE)
+================================ */
+.episodes {
+  display: flex;
+  gap: 30px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+.episodes::-webkit-scrollbar {
+  height: 8px;
+}
+
+.episodes::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 10px;
+}
+
+/* ===============================
+   Episode Card
+================================ */
+.episode-card {
+  background-color: #020617;
+  border-radius: 14px;
+  min-width: 320px;
+  max-width: 320px;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ===============================
+   Video
+================================ */
+.episode-card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  display: block;
+}
+
+/* ===============================
+   Text Content
+================================ */
+.episode-card h3 {
+  font-size: 1.05rem;
+  margin: 15px;
+  line-height: 1.4;
+}
+
+.episode-card p {
+  font-size: 0.9rem;
+  margin: 0 15px 15px;
+  color: #cbd5f5;
+}
+
+/* ===============================
+   Meta Info (duration, views, icon)
+================================ */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 15px 10px;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.duration,
+.views {
+  white-space: nowrap;
+}
+
+/* YouTube Icon */
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  opacity: 0.85;
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .episode-card {
+    min-width: 280px;
+  }
+
+  .episode-card iframe {
+    height: 180px;
+  }
+}
